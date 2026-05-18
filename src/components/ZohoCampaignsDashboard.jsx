@@ -2,10 +2,10 @@ import { useState, useEffect, useCallback } from "react";
 
 // ─── CONFIG ──────────────────────────────────────────────────────────────────
 const ZOHO_CONFIG = {
-  CLIENT_ID: import.meta.env.VITE_ZOHO_CLIENT_ID || "1000.L1D10F1V1X2S5S3G98UDEBG45XDQVH",
-  CLIENT_SECRET: import.meta.env.VITE_ZOHO_CLIENT_SECRET || "1ebbe3b54ea8a0aaa0702b783821bbaf226713cb2c",
-  TOKEN_URL: "/zoho-auth/oauth/v2/token",
-  API_BASE: "/zoho-api",
+  CLIENT_ID: import.meta.env.VITE_ZOHO_CLIENT_ID || "",
+  CLIENT_SECRET: import.meta.env.VITE_ZOHO_CLIENT_SECRET || "",
+  TOKEN_URL: "/api/zoho-auth",
+  API_BASE: "api/zoho-api",
   REFRESH_TOKEN: import.meta.env.VITE_ZOHO_REFRESH_TOKEN || "",
   BEARER_TOKEN: import.meta.env.VITE_ZOHO_BEARER_TOKEN || "",
 };
