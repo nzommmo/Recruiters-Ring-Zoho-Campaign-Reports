@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    { "source": "/zoho-auth/:path*", "destination": "/api/zoho-auth" },
-    { "source": "/zoho-api/:path*",  "destination": "/api/zoho-api" }
+    { "source": "/api/zoho-auth", "destination": "/api/zoho-auth" },
+    { "source": "/api/zoho-api/:path*", "destination": "/api/zoho-api" }
   ]
 }
