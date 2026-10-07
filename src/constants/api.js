@@ -2,12 +2,12 @@
 // so there is one token cache instead of two.
 
 const ZOHO_CONFIG = {
-  CLIENT_ID: import.meta.env.VITE_ZOHO_CLIENT_ID || "",
-  CLIENT_SECRET: import.meta.env.VITE_ZOHO_CLIENT_SECRET || "",
+  CLIENT_ID: import.meta.env.ZOHO_CLIENT_ID || "",
+  CLIENT_SECRET: import.meta.env.ZOHO_CLIENT_SECRET || "",
   TOKEN_URL: "/api/zoho-auth",
   API_BASE: "/api/zoho-api", // leading slash added: the path must resolve from the site root
-  REFRESH_TOKEN: import.meta.env.VITE_ZOHO_REFRESH_TOKEN || "",
-  BEARER_TOKEN: import.meta.env.VITE_ZOHO_BEARER_TOKEN || "",
+  REFRESH_TOKEN: import.meta.env.ZOHO_REFRESH_TOKEN || "",
+  BEARER_TOKEN: import.meta.env.ZOHO_BEARER_TOKEN || "",
 };
 
 let cachedToken = null;
