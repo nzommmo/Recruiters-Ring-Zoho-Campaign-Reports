@@ -1,13 +1,3 @@
-// Fast loader for the subscribers of one list.
-//
-// Compared with walking pages one by one:
-//   1. Pages are requested in parallel. The page count is worked out from the list's contact
-//      count, so there is no waiting for a short page to know when to stop.
-//   2. Requests go through a shared limiter, so several lists can load at once without
-//      flooding Zoho.
-//   3. 429 and 5xx responses are retried with backoff instead of failing the whole load.
-//   4. Results are cached at module level, so they survive switching tabs.
-
 import { zohoFetch } from "./api";
 import { extractContacts, normContact } from "./ZohoLists";
 

@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo, useCallback, useRef } from "react";
-import { zohoFetchAll } from "../constants/ZohoLists";
+import { zohoFetchAll } from "../constants/api";
 import { loadListContacts, hasCachedContacts, clearContactCache } from "../constants/ZohoContacts";
 import { extractLists, normList, fullName, fmt, downloadCsv } from "../constants/ZohoLists";
 
